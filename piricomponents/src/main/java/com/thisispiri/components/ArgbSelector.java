@@ -1,4 +1,5 @@
-package com.thisispiri.fragments;
+package com.thisispiri.components;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -10,6 +11,7 @@ import static android.graphics.Color.argb;
 import static android.graphics.Color.blue;
 import static android.graphics.Color.green;
 import static android.graphics.Color.red;
+
 /**A basic {@code ViewGroup} for letting the user select a color by manipulating ARGB values. Includes a preview of and a getter and setter for the color.*/
 public class ArgbSelector extends LinearLayout {
 	/**An empty {@code View} that shows the color currently selected.*/
