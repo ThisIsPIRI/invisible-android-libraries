@@ -17,8 +17,15 @@ public class ArgbSelector extends LinearLayout {
 	/**An empty {@code View} that shows the color currently selected.*/
 	private View preview;
 	private NumberPicker aEdit, rEdit, gEdit, bEdit;
+	public ArgbSelector(Context context) {
+		super(context);
+		setup();
+	}
 	public ArgbSelector(Context context, AttributeSet attrs) {
 		super(context, attrs);
+		setup();
+	}
+	private void setup() {
 		setOrientation(VERTICAL);
 		inflate(getContext(), R.layout.argb_selector, this);
 		preview = findViewById(R.id.colorPreview);
